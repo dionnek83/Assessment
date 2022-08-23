@@ -1,7 +1,9 @@
-<?php include("./header.php");
+<?php
+
+include("./templates/header.php");
 
 //importing class and creating object
-include "contactsClass.php";
+include "./classes/contactsClass.php";
 $contactObj = new Contacts();
 
 //sets the values passed to pass it into the unlink contacts function
@@ -25,5 +27,4 @@ $contactObj->unlinkContacts($code, $id);
 </div>
 
 
-<?php include("./footer.php");
-?>
+<?php include("./templates/footer.php") ?>

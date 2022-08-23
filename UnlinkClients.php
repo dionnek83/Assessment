@@ -1,7 +1,9 @@
-<?php include("./header.php");
+<?php
+
+include("./templates/header.php");
 
 //importing class and creating object
-include "clients.php";
+include "./classes/clients.php";
 $clientObj = new Clients();
 
 //sets the values passed to pass it into the unlink clients function
@@ -24,5 +26,4 @@ $clientObj->unlinkClients($code, $email);
 </div>
 
 
-<?php include("./footer.php");
-?>
+<?php include("./templates/footer.php") ?>

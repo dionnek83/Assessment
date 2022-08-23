@@ -1,11 +1,13 @@
-<?php include("./header.php");
+<?php
+
+include("./templates/header.php");
 
 
 //importing classes and creating objects 
-include "contactsClass.php";
+include "./classes/contactsClass.php";
 $contactObj = new Contacts();
 
-include "clients.php";
+include "./classes/clients.php";
 $clientObj = new Clients();
 
 
@@ -61,5 +63,4 @@ if ($_POST['submit']) {
 </div>
 
 
-<?php include("./footer.php");
-?>
+<?php include("./templates/footer.php") ?>

@@ -1,10 +1,10 @@
 <?php
-include("./header.php");
+include("./templates/header.php");
 //importing classes and creating objects 
-include "clients.php";
+include "./classes/clients.php";
 $clientObj = new Clients();
 
-include "contactsClass.php";
+include "./classes/contactsClass.php";
 $contactObj = new Contacts();
 
 
@@ -177,4 +177,4 @@ if ($_POST['add_client_submit']) {
     </div>
 </div>
 
-<?php include("./footer.php") ?>
+<?php include("./templates/footer.php") ?>
